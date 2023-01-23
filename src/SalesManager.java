@@ -14,18 +14,18 @@ public class SalesManager {
         }
         return max;
     }
-    public int min() {
-        int min = 1;
-        for (int sale : sales) {
+    public long min() {
+        long min = 1;
+        for (long sale : sales) {
             if (sale < min) {
                 min = sale;
             }
         }
         return min;
     }
-    public int ave (){
-        int sum=0;
-        for (int sale : sales) {
+    public long ave (){
+        long sum=0;
+        for (long sale : sales) {
             sum += sale;
         }
         sum = sum-max()-min();
